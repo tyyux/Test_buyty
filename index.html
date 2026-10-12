@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Studio — Салон красоты</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #faf8f5; color: #333; }
+  header {
+    background: linear-gradient(135deg, #f5e6e8, #f0d9dc);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  header h1 { font-size: 42px; color: #8b5e63; margin-bottom: 10px; }
+  header p { font-size: 18px; color: #a67c82; }
+  .btn {
+    display: inline-block;
+    background: #8b5e63;
+    color: white;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+  .card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  .card h3 { color: #8b5e63; margin-bottom: 10px; font-size: 20px; }
+  .card .price { font-size: 24px; font-weight: 700; color: #333; margin: 12px 0; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 30px; }
+  .gallery img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; }
+  footer { background: #8b5e63; color: white; text-align: center; padding: 30px; margin-top: 40px; }
+  footer a { color: #f5e6e8; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Beauty Studio</h1>
+  <p>Салон красоты, где тебя ждут</p>
+  <a href="#contact" class="btn">Записаться</a>
+</header>
+
+<div class="container">
+  <h2 style="text-align:center; margin-bottom: 30px; color:#8b5e63;">Наши услуги</h2>
+  <div class="services">
+    <div class="card">
+      <h3>💅 Маникюр</h3>
+      <p class="price">от 1500 ₽</p>
+      <p>Аппаратный, комбинированный, с покрытием</p>
+    </div>
+    <div class="card">
+      <h3>💇 Стрижка</h3>
+      <p class="price">от 2000 ₽</p>
+      <p>Женская, мужская, детская</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Окрашивание</h3>
+      <p class="price">от 3500 ₽</p>
+      <p>Балаяж, омбре, тонирование</p>
+    </div>
+    <div class="card">
+      <h3>💆 Уход за лицом</h3>
+      <p class="price">от 2500 ₽</p>
+      <p>Чистка, массаж, маски</p>
+    </div>
+  </div>
+
+  <h2 style="text-align:center; margin: 50px 0 20px; color:#8b5e63;">Наши работы</h2>
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Маникюр">
+    <img src="https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Стрижка">
+    <img src="https://images.pexels.com/photos/3993311/pexels-photo-3993311.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Салон">
+    <img src="https://images.pexels.com/photos/3993320/pexels-photo-3993320.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Окрашивание">
+  </div>
+</div>
+
+<footer id="contact">
+  <h3>Запишись прямо сейчас</h3>
+  <p style="margin: 15px 0;">Телефон: +7 (999) 123-45-67</p>
+  <p>Instagram: <a href="#">@beauty_studio</a></p>
+</footer>
+</body>
+</html>
